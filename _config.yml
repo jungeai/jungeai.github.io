@@ -22,3 +22,8 @@ excerpt_separator: "<!--more-->"
 author:
   name: 袁文君（君哥）
   bio: "📞 手机：13805186030（微信同号）"
+
+# 【关键修复】添加GitHub Pages默认插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
