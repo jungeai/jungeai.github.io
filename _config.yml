@@ -9,9 +9,14 @@ remote_theme: pages-themes/architect@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-paginate # 启用官方分页插件
 
-# 【关键】统一文章URL格式，彻底解决404问题
+# 统一文章URL格式，彻底解决404问题
 permalink: /:title/
+
+# 【核心分页配置】
+paginate: 10 # 每页显示10篇文章，可根据需要修改
+paginate_path: "/page:num/" # 分页URL格式：第2页是/page2/，第3页是/page3/
 
 # 博客功能配置
 show_excerpts: true
