@@ -1,0 +1,24 @@
+# 君财有道-知识星球博客配置
+title: 君财有道-知识星球
+description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全域流量实战经验
+baseurl: ""
+url: "https://yuanwenjun-geo.github.io"
+
+# 使用GitHub官方稳定主题
+theme: minima
+
+# 文章URL格式
+permalink: /:title/
+
+# 分页配置（内置，无需额外插件）
+paginate: 10
+paginate_path: "/page:num/"
+
+# 博客功能
+show_excerpts: true
+excerpt_separator: "<!--more-->"
+
+# 作者信息
+author:
+  name: 袁文君（君哥）
+  bio: "📞 手机：13805186030（微信同号）"
