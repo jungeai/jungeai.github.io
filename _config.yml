@@ -4,17 +4,15 @@ description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全�
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
-# 【关键】使用GitHub官方博客主题，remote_theme方式100%兼容
+# 主题配置（GitHub官方稳定主题）
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
 
-# 博客核心功能
-show_excerpts: true
-permalink: /:year/:month/:day/:title/
-excerpt_separator: "<!--more-->"
+# 【关键】统一文章URL格式，彻底解决404问题
+permalink: /:title/
 
-# 作者信息
-author:
-  name: 袁文君（君哥）
+# 博客功能配置
+show_excerpts: true
+excerpt_separator: "<!--more-->"
