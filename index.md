@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: default
+title: 君财有道-知识星球
 ---
 
 # 欢迎来到君财有道-知识星球
@@ -13,3 +14,14 @@ layout: home
 ---
 
 ## 最新文章
+
+{% for post in site.posts %}
+### [{{ post.title }}]({{ post.url }})
+**发布日期：{{ post.date | date: "%Y年%m月%d日" }}**
+
+{{ post.excerpt | strip_html | truncate: 150 }}
+
+[阅读全文 →]({{ post.url }})
+
+---
+{% endfor %}
