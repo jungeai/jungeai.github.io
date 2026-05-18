@@ -15,17 +15,15 @@ title: 君财有道-知识星球
 
 ## 最新文章
 
-{% if site.posts.size > 0 %}
-  {% for post in site.posts limit:10 %}
-  <div style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
-    <h3 style="margin:0 0 0.5rem 0;">
-      <a href="{{ post.url }}" style="color:#2385bb; text-decoration:none;">{{ post.title }}</a>
-    </h3>
-    <p style="color:#666; font-size:0.9rem; margin:0 0 0.5rem 0;">发布于：{{ post.date | date: "%Y年%m月%d日" }}</p>
-    <p style="color:#444; margin:0 0 0.5rem 0;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
-    <a href="{{ post.url }}" style="color:#2385bb; text-decoration:none; font-size:0.9rem;">阅读全文 →</a>
-  </div>
-  {% endfor %}
+{% for post in site.posts %}
+<div style="margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
+  <h2 style="margin:0 0 10px 0; font-size:22px;">
+    <a href="{{ post.url }}" style="color:#2385bb; text-decoration:none;">{{ post.title }}</a>
+  </h2>
+  <p style="color:#999; font-size:14px; margin:0 0 10px 0;">发布日期：{{ post.date | date: "%Y年%m月%d日" }}</p>
+  <p style="color:#444; line-height:1.6;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+  <a href="{{ post.url }}" style="color:#2385bb; text-decoration:none;">阅读全文 →</a>
+</div>
 {% else %}
-  <p style="color: #999;">暂无文章，敬请期待...</p>
-{% endif %}
+<p>暂无文章，敬请期待...</p>
+{% endfor %}
