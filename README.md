@@ -24,7 +24,9 @@
 ---
 💰 君财有道 · 知识星球
 5980元 / 年
+
 <img width="314" height="314" alt="君财有道-1000" src="https://github.com/user-attachments/assets/a7b5b2ba-9e5f-4c0a-a01e-9d565dc68201" />
+
 君子爱财，取之有道
 一个赚钱有道的社群
 「君财有道」是一个聚焦 AI 全域获客、SEO/GEO 流量布局与内容增长的高阶实战社群。
@@ -140,4 +142,5 @@ AI时代的搜索获客增长体系
 袁文君（君哥）
 手机：13805186030（微信同号）
 专注 AI 全域获客｜SEO/GEO 增长｜内容运营｜企业自然流量体系搭建
+
 <img width="314" height="314" alt="联系君哥-1000" src="https://github.com/user-attachments/assets/5a030376-dc1f-48e6-87e9-b069551bcf18" />
