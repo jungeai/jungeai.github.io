@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: 君财有道-知识星球
 ---
 
@@ -13,20 +13,19 @@ title: 君财有道-知识星球
 
 ---
 
-## 最新文章（调试模式）
+## 最新文章
 
-{% raw %}
-{% assign posts = site.posts | sort: 'date' | reverse %}
-{% if posts.size > 0 %}
-  {% for post in posts %}
-  <div style="margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p style="color: #666; font-size: 14px;">发布于：{{ post.date | date: "%Y-%m-%d" }}</p>
-    <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+{% if site.posts.size > 0 %}
+  {% for post in site.posts limit:10 %}
+  <div style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
+    <h3 style="margin:0 0 0.5rem 0;">
+      <a href="{{ post.url }}" style="color:#2385bb; text-decoration:none;">{{ post.title }}</a>
+    </h3>
+    <p style="color:#666; font-size:0.9rem; margin:0 0 0.5rem 0;">发布于：{{ post.date | date: "%Y年%m月%d日" }}</p>
+    <p style="color:#444; margin:0 0 0.5rem 0;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    <a href="{{ post.url }}" style="color:#2385bb; text-decoration:none; font-size:0.9rem;">阅读全文 →</a>
   </div>
   {% endfor %}
 {% else %}
-  <p style="color: red;">⚠️ Jekyll 未识别到任何文章，请检查文件名格式！</p>
-  <p>当前 site.posts.size = {{ site.posts.size }}</p>
+  <p style="color: #999;">暂无文章，敬请期待...</p>
 {% endif %}
-{% endraw %}
