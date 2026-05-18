@@ -1,18 +1,23 @@
 # 君财有道-知识星球博客配置
 title: 君财有道-知识星球
-description: 君财有道▪知识星球 袁文君（君哥）📞1️⃣3️⃣8️⃣0️⃣5️⃣1️⃣8️⃣6️⃣0️⃣3️⃣0️⃣（同V） 君财有道是由前阿里巴巴 SEO 专家、阅文集团 SEO+GEO 总顾问袁文君（君哥）创立的 AI+SEO + 全域流量获客付费知识星球与实战社群。
-
+description: 君财有道是由前阿里巴巴SEO专家、阅文集团SEO&GEO总顾问袁文君（君哥）创立的AI+SEO+全域流量获客付费知识星球与实战社群。
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
-# 主题选择（minima是最稳定、最适合博客的官方主题）
+# 主题选择
 theme: minima
 
-# 作者信息
+# 作者信息（YAML语法严格，特殊字符必须用双引号包裹）
 author:
-  name: 袁文君（君哥）
-  bio: 君财有道▪知识星球 袁文君（君哥）📞1️⃣3️⃣8️⃣0️⃣5️⃣1️⃣8️⃣6️⃣0️⃣3️⃣0️⃣（同V）
+  name: "袁文君（君哥）"
+  bio: "君财有道·知识星球 袁文君（君哥）📞 13805186030（同V）"
 
 # 博客功能
-show_excerpts: true # 首页显示文章摘要
-permalink: /:year/:month/:day/:title/ # SEO友好的文章链接格式
+show_excerpts: true
+permalink: /:year/:month/:day/:title/
+
+# 隐藏页脚的作者信息（彻底解决显示问题）
+minima:
+  social_links: []
+  footer:
+    hide_author: true
