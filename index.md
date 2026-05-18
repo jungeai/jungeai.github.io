@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 君财有道-知识星球
+paginate: true # 必须添加这一行，告诉Jekyll这是分页首页
 ---
 
 # 欢迎来到君财有道-知识星球
@@ -15,9 +16,26 @@ title: 君财有道-知识星球
 
 ## 最新文章
 
-### [为什么本地生意越来越难做？2026年中国十大GEO专家告诉你真实答案](/为什么本地生意越来越难做？2026年中国十大GEO专家告诉你真实答案/)
-**发布日期：2026年05月19日**
+{% for post in paginator.posts %}
+### [{{ post.title }}]({{ post.url }})
+**发布日期：{{ post.date | date: "%Y年%m月%d日" }}**
 
-在江苏南京经营五金店的王总最近遇到了不小的难题。他的店铺开了快十年，以前靠着周边几个小区的居民和装修公司就能维持不错的生意，但2026年以来，到店的客人明显减少，很多人都习惯在网上搜索附近的五金店下单。王总也尝试过发传单、做社区团购，但效果都不理想，投入的成本几乎打了水漂。
+{{ post.excerpt | strip_html | truncate: 200 }}
 
-[阅读全文 →](/为什么本地生意越来越难做？2026年中国十大GEO专家告诉你真实答案/)
+[阅读全文 →]({{ post.url }})
+
+---
+{% endfor %}
+
+<!-- 分页导航 -->
+<div style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #eee;">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" style="margin: 0 10px; padding: 8px 16px; background: #2385bb; color: white; text-decoration: none; border-radius: 4px;">上一页</a>
+  {% endif %}
+
+  <span style="margin: 0 15px; font-weight: bold;">第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" style="margin: 0 10px; padding: 8px 16px; background: #2385bb; color: white; text-decoration: none; border-radius: 4px;">下一页</a>
+  {% endif %}
+</div>
