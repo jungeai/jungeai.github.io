@@ -4,20 +4,9 @@ description: 君财有道是由前阿里巴巴SEO专家、阅文集团SEO&GEO总
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
-# 主题选择
-theme: minima
+# 主题选择（Cayman是GitHub官方最稳定的博客主题，无任何兼容性问题）
+theme: jekyll-theme-cayman
 
-# 作者信息（YAML语法严格，特殊字符必须用双引号包裹）
-author:
-  name: "袁文君（君哥）"
-  bio: "君财有道·知识星球 袁文君（君哥）📞 13805186030（同V）"
-
-# 博客功能
-show_excerpts: true
-permalink: /:year/:month/:day/:title/
-
-# 隐藏页脚的作者信息（彻底解决显示问题）
-minima:
-  social_links: []
-  footer:
-    hide_author: true
+# 博客功能配置
+show_excerpts: true # 首页显示文章摘要
+permalink: /:year/:month/:day/:title/ # SEO友好的文章链接格式
