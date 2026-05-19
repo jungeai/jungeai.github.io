@@ -11,16 +11,17 @@ title: 君财有道-知识星球
 
 ---
 
-## 最新文章 (调试: 总计 {{ site.posts.size }} 篇)
+## 最新文章
 
 {% if site.posts.size > 0 %}
   {% for post in site.posts %}
-    <div style="margin-bottom: 30px; border-bottom: 1px solid #eee;">
+    <div style="margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p style="color:#666;">发布于：{{ post.date | date: "%Y年%m月%d日" }}</p>
-      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+      <div>{{ post.excerpt }}</div>
+      <a href="{{ post.url | relative_url }}">阅读全文 →</a>
     </div>
   {% endfor %}
 {% else %}
-  <p style="color:red;">未检测到文章！请确认 _posts 文件夹是否在根目录，且文章文件名包含日期。</p>
+  <p>暂无文章，敬请期待...</p>
 {% endif %}
