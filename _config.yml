@@ -3,8 +3,10 @@ description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全�
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
-# 如果您想使用完全自定义的样式，建议暂时注释掉下面这行
-# theme: minima
+# 强制开启 collections 识别，这是显示文章的保险机制
+collections:
+  posts:
+    output: true
 
 permalink: /:title/
 
