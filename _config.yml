@@ -3,7 +3,9 @@ description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全�
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
-theme: minima
+# 如果您想使用完全自定义的样式，建议暂时注释掉下面这行
+# theme: minima
+
 permalink: /:title/
 
 plugins:
