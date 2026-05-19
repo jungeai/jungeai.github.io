@@ -23,5 +23,5 @@ title: 君财有道-知识星球
     </div>
   {% endfor %}
 {% else %}
-  <p style="color:red;">暂无文章，请确认 _posts 文件夹是否在根目录，且文章文件名包含日期。</p>
+  <p>暂无文章，敬请期待...</p>
 {% endif %}
