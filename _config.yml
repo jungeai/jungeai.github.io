@@ -5,11 +5,8 @@ url: "https://yuanwenjun-geo.github.io"
 
 theme: minima
 permalink: /:title/
-
-# 强制开启 collections 识别
-collections:
-  posts:
-    output: true
+# 添加下面这一行，强制 Jekyll 处理日期靠后的文章
+future: true
 
 plugins:
   - jekyll-feed
