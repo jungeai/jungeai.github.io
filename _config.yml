@@ -3,11 +3,22 @@ description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全�
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
+# 使用 minima 主题
 theme: minima
-permalink: /:title/
-# 添加下面这一行，强制 Jekyll 处理日期靠后的文章
+
+# 强制开启 collections 识别，确保 _posts 目录被处理
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+
+# 关键设置：设置为 true 以强制 Jekyll 处理所有日期（包括“未来”日期）
 future: true
 
+# 永久链接格式
+permalink: /:title/
+
+# 插件配置
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
