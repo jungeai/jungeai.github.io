@@ -3,12 +3,13 @@ description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全�
 baseurl: ""
 url: "https://yuanwenjun-geo.github.io"
 
-# 强制开启 collections 识别，这是显示文章的保险机制
+theme: minima
+permalink: /:title/
+
+# 强制开启 collections 识别
 collections:
   posts:
     output: true
-
-permalink: /:title/
 
 plugins:
   - jekyll-feed
