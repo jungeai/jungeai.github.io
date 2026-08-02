@@ -27,4 +27,6 @@ social:
   github: jungeai
 twitter:
   card: summary_large_image
+logo: https://jungeai.github.io/images/og-image.png
+og_image: https://jungeai.github.io/images/og-image.png
 theme_color: "#0a66c2"
