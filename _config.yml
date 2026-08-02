@@ -1,5 +1,5 @@
 title: 君财有道-知识星球
-description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全域流量实战经验
+description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全域流量实战经验。提供SEO优化、GEO优化、AI搜索流量增长与企业全域流量实战服务。
 baseurl: ""
 url: "https://jungeai.github.io"
 permalink: /:title/
@@ -7,3 +7,24 @@ future: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+# ===== SEO 优化（用户名改 jungeai 后补充） =====
+lang: zh-CN
+locale: zh_CN
+keywords:
+  - SEO优化
+  - GEO优化
+  - 全域流量
+  - SEO专家
+  - 搜索引擎优化
+  - AI搜索优化
+  - 企业SEO
+  - GEO专家
+  - 知识星球
+author:
+  name: 君财有道
+social:
+  github: jungeai
+twitter:
+  card: summary_large_image
+theme_color: "#0a66c2"
