@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jungeai.github.io/sitemap.xml
