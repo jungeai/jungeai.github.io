@@ -1,6 +1,8 @@
 ---
 layout: default
 title: 君财有道-知识星球
+description: 前阿里巴巴SEO专家 | 阅文集团SEO&GEO总顾问 | 21年全域流量实战经验，专注SEO优化、GEO优化与AI搜索流量增长。
+keywords: [SEO优化, GEO优化, 全域流量, SEO专家, AI搜索优化, 知识星球]
 ---
 
 # 欢迎来到君财有道-知识星球
